@@ -65,7 +65,7 @@ jobs:
               f.write(f"COMMIT_SUBJECT={subject_msg}\n")
 
       - name: Send email to subscribers via AWS SES
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v4
         with:
           server_address: 3675ceinjt98.fips.qbns.mail-manager-smtp.amazonaws.com 
           server_port: 587
